@@ -15,6 +15,7 @@ class PostsController extends Controller
     public function index()
     {
     	//fetch all post from database
+        // return
     	$posts=Post::latest()->get();
     	return view('posts.index',compact('posts'));
     }
